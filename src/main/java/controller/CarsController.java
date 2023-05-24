@@ -1,4 +1,4 @@
-package web.controller;
+package controller;
 
 import DAO.CarDAOImpl;
 import org.springframework.stereotype.Controller;
@@ -16,6 +16,9 @@ public class CarsController {
     public String getCars(@RequestParam(value = "count", required = false) Integer count , Model model) {
         if (count == null) {
             model.addAttribute("allCars", new CarDAOImpl().fullCarList());
+            return "car";
+        }
+        if (count <= 0) {
             return "car";
         }
         model.addAttribute("count", new CarDAOImpl().carlist(count));
