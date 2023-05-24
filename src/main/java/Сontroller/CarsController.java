@@ -1,4 +1,4 @@
-package controller;
+package Сontroller;
 
 import DAO.CarDAOImpl;
 import org.springframework.stereotype.Controller;
