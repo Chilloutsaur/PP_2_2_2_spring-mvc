@@ -1,6 +1,6 @@
-package DAO;
+package web.DAO;
 
-import Model.Car;
+import web.model.Car;
 
 import java.util.List;
 

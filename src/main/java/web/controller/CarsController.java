@@ -1,6 +1,6 @@
 package web.controller;
 
-import DAO.CarDAOImpl;
+import web.DAO.CarDAOImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

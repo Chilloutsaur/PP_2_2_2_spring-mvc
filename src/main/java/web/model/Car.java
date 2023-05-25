@@ -1,8 +1,6 @@
-package Model;
+package web.model;
 
 import org.springframework.stereotype.Component;
-
-import java.util.List;
 
 @Component
 public class Car {
@@ -46,7 +44,7 @@ public class Car {
     @Override
     public String toString() {
         return "Car{" +
-                "model='" + model + '\'' +
+                "web.model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", serial=" + serial +
                 '}';

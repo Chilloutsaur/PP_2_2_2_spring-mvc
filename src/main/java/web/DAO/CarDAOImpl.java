@@ -1,6 +1,6 @@
-package DAO;
+package web.DAO;
 
-import Model.Car;
+import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ public class CarDAOImpl implements CarDAO {
 
     public List<Car> fullCarList() {
         for (int i = 1; i <= 5; i++) {
-            carList.add(new Car("Model" + i, "Color" + i, i));
+            carList.add(new Car("model" + i, "Color" + i, i));
         }
         return carList;
     }
