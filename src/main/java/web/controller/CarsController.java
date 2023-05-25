@@ -18,6 +18,9 @@ public class CarsController {
             model.addAttribute("allCars", new CarDAOImpl().fullCarList());
             return "car";
         }
+        if (count <= 0) {
+            return "car";
+        }
         model.addAttribute("count", new CarDAOImpl().carlist(count));
         return "car";
     }
